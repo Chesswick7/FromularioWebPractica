@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+:root {
+  font-size: 80%;
+  --imagenFondo: url("https://recreasport.com/wp-content/uploads/2017/04/SAM_0191-2-1200x676.jpg");
+  --colorFondo: linear-gradient(
+    90deg,
+    rgba(100, 70, 20, 0.6),
+    rgba(206, 60, 206, 0.6),
+    rgba(100, 50, 256, 0.6)
+  );
+}
+
+body {
+  background-attachment: fixed;
+  background-color: transparent;
+  background-image: var(--colorFondo), var(--imagenFondo);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: oswald, arial;
+}
+.encuesta {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.container {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(256, 256, 256, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-radius: 0.5rem;
+  display: block;
+  max-width: 70rem;
+  overflow: auto;
+  padding: 1vw 1vw 1vw 1vw;
+}
+h1 {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 4rem;
+}
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  color: #eeeeee;
+  font-size: 2rem;
+}
+
+label {
+  margin-left: 1rem;
+  text-align: left;
+  color: #eeeeee;
+  font-size: 1.3rem;
+}
+
+.elemento-formulario {
+  margin: 0 auto 2rem 1rem;
+  padding: 0.25rem;
+  display: block;
+  width: 80%;
+  height: auto;
+  color: hsl(50, 0%, 50%);
+  background-color: #ffffff;
+  border: 2px solid #ceeeee;
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#estilo-propuesta {
+  margin: 0 auto 2rem 1rem;
+  padding: 0.25rem;
+}
+
+#estilo-conformidad {
+  margin: 0 auto 2rem 1rem;
+  padding: 0.25rem;
+}
+
+.comentario {
+  min-height: 5rem;
+  width: 100%;
+  padding: 2rem;
+}
+.cajaComentario {
+  min-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: 2rem;
+}
+
+.botonEnvio {
+  display: block;
+  width: 20%;
+  height: auto;
+  background: rgba(256, 256, 256, 0.5);
+  border-radius: 0.3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.cajaBoton {
+  display: flex;
+  justify-content: right;
+  margin-right: 16%;
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 60%;
+  }
+}

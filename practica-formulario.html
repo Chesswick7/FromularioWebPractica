@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de practica- Encuesta sobre Fútbol</title>
+</head>
+<body>
+
+<div class="encuesta">
+  <div class="container">
+    <h1 id="title">Encuesta sobre Fútbol</h1>
+    <p id="description">Desde la Secretaria Deportiva del Club Rosario United nos gustaria conocer tu opinión. ¡Solo tomará un minuto!</p>
+    <!--Formulario ------------------------------->
+    <form id="survey-form">
+      <!--nombre ------------------------------->
+      <label id="name-label" class="etiquetas" for="name">Nombre</label>
+      <input class="elemento-formulario" id="name" type="text" placeholder="Ingrese su nombre" required></input>
+      <!--email ------------------------------->
+      <label id="email-label" class="etiquetas" for="email">Email</label>
+      <input class="elemento-formulario" id="email" type="email" placeholder="Ingrese su email" required></input>
+      <!--edad ------------------------------->
+      <label id="number-label" class="etiquetas" for="number">Edad</label>
+      <input class="elemento-formulario" id="number" type="number" min="1" max="99" placeholder="Edad" required></input>
+      <!--Ocupacion ------------------------------->
+      <label class="etiquetas" for="dropdown">Ocupación</label>
+      <select class="elemento-formulario" id="dropdown" type="dropdown" required>
+        <option disabled selected value>
+          Seleccione ocupación</option>
+        <option>Empleado</option>
+        <option>Independiente</option>
+        <option>Jubilado/Pensionado</option>
+        <option>Estudiante</option>
+      </select>
+
+      <!--estado---------------------------------->
+      <div id="estilo-conformidad">
+        <p>¿Qué tan conforme estás con el rendimiento deportivo de nuestro equipo de fútbol?</p><br>
+        <label><input name="opRendimiento" type="radio" value="MConforme" checked> Muy conforme, me parece excelente.</label><br>
+        <br>
+        <label><input name="opRendimiento" type="radio" value="Conforme"> Conforme aunque se podría mejorar.</label><br>
+        <br>
+        <label><input name="opRendimiento" type="radio" value="NMConforme"> Un poco disconforme, hay varias cosas a mejorar.</label><br>
+        <br>
+        <label><input name="opRendimiento" type="radio" value="Disconforme"> Totalmente Disconforme</label><br>
+      </div>
+      <!--definicion---------------------------------->
+      <div id="estilo-propuesta">
+        <p>¿En qué te parece que debemos enfocarnos en el futuro?</p>
+        <label><input name="propuesta" type="checkbox" value="seguir" checked> Seguir trabando como venimos</label><br>
+        <br>
+
+        <label><input name="propuesta" type="checkbox" value="entrenar"> Enfocarse más en el entrenamiento físico</label><br>
+        <br>
+
+        <label><input name="propuesta" type="checkbox" value="tactica"> Enfocarse en mejorar el funcionamiento táctico</label><br>
+        <br>
+
+        <label><input name="propuesta" type="checkbox" value="jugadores"> Enfocarse en reclutar nuevos talentos</label><br>
+      </div>
+      <!--comentarios-------------------------------->
+
+      <p>¿Algun otro comentario que quieras dejarnos?</p>
+      <textarea id="comentario" class="cajaComentario" name="comentarios" placeholder="Escríbenos..."></textarea>
+
+      <!--enviar-------------------------------->
+      <div class="cajaBoton">
+        <button class="botonEnvio" id="submit" type="submit">Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  
+</body>
+</html>
